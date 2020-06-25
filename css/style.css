@@ -237,6 +237,7 @@ a {
 
 .nav {
   margin-left: 85px;
+  align-items: center;
 }
 
 .nav__list {
@@ -245,16 +246,16 @@ a {
 
 .nav__link--active {
   color: #2196f3;
-  border-bottom: 10px solid #2196f3;
+  border-bottom: 5px solid #2196f3;
   border-height: 4px;
 }
 
 .nav__link:hover,
 .nav__link:focus {
-  display: flexbox;
+  display: flex;
   box-sizing: border-box;
   color: #2196f3;
-  border-bottom: 10px solid #2196f3;
+  border-bottom: 5px solid #2196f3;
   border-radius: 2px;
 }
 
@@ -268,7 +269,7 @@ a {
 
 .contacts__link:hover,
 .contacts__link:active {
-  color: #2196f3;
+  /* color: #2196f3; */
 }
 
 .contacts {
