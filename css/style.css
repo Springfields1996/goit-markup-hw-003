@@ -552,6 +552,7 @@ a {
   background-color: hsl(235, 10%, 21%);
   margin: 0 auto;
   width: 1600px;
+  width: fit-content;
 }
 
 .footer__items {
