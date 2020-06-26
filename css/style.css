@@ -188,18 +188,23 @@ a {
   color: inherit;
 }
 
+.hidden {
+  display: none;
+}
+
+.hero {
+  background-image: url(../image/bcg-hero.jpg);
+}
+
 .container {
   max-width: 1200px;
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
-
-  /* text-align: center; */
-  /* justify-content: center; */
 }
 
 .header__container {
-  width: 1200px;
+  max-width: 1200px;
 }
 
 .header {
@@ -264,6 +269,7 @@ a {
 
 .contacts__link {
   text-decoration: none;
+  padding: 7px 15px;
 }
 
 .contacts__link:hover,
@@ -272,7 +278,7 @@ a {
 }
 
 .contacts {
-  margin-left: 175px;
+  margin-left: auto;
   margin-right: -15px;
   align-items: center;
 }
@@ -288,7 +294,7 @@ a {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  padding: 7px 15px;
+  /* padding: 7px 15px; */
 }
 
 .contacts__text:hover,
@@ -297,6 +303,11 @@ a {
 }
 
 .layout__section {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 94px;
 }
 
@@ -346,11 +357,12 @@ a {
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  width: 200px;
-
-  padding: 10px 32px;
-
   border: 1px solid transparent;
+}
+
+.btn-hero {
+  width: 200px;
+  padding: 10px 32px;
 }
 
 .btn__text {
@@ -359,6 +371,12 @@ a {
   font-size: 16px;
   line-height: 1.87;
   text-align: center;
+}
+
+.layout {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .layout__list {
@@ -529,7 +547,8 @@ a {
   font-size: 16px;
   line-height: 1.14;
   text-transform: uppercase;
-
+  padding-top: 12px;
+  padding-bottom: 20px;
   color: #ffffff;
 }
 
@@ -546,16 +565,69 @@ a {
 .footer__items {
   display: flex;
   margin: 0 -34px;
-  padding: 60px 15px;
+  padding: 60px 0px;
 }
 
 .container-footer {
-  /* margin: 0 34px; */
   padding: 0 34px;
 }
 
 .footer__subscribe {
-  margin-left: 26px;
+  margin-left: auto;
+  padding-left: ;
+}
+
+.contact__link {
+  padding-top: 9px;
+}
+
+.footer-address {
+  padding-top: 20px;
+}
+
+.cards__contain {
+  display: block;
+  margin: 0 auto;
+}
+
+.cards__filter {
+  display: flex;
+  margin-top: 94px;
+  padding-bottom: 56px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+.btn-filter {
+  background: #f5f4fa;
+  border-radius: 4px;
+  border-color: transparent;
+  padding: 6px 22px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+}
+
+.btn-padding {
+  padding: 0 4px;
+}
+
+.btn-filter:hover,
+.btn-filter:focus {
+  background: #2196f3;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 3px 1px rgba(0, 0, 0, 0.1);
+}
+
+.btn-filter__current {
+  background: #2196f3;
+}
+
+.btn-footer {
+  padding: 12px 20px;
 }
 
 p {
